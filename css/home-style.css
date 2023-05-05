@@ -1,0 +1,513 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    /* background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative; */
+}
+
+/* header and nav started */
+
+header {
+    width: 100%;
+    height: 321px;
+    background-image: url("../img/b1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .headername {
+    width: 100%;
+    height: 62px;
+    background-color: rgba(0, 0, 0, 65%);
+    /* background-color: azure; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: fixed;
+}
+
+header .headername .header-name {
+    width: 120px;
+    height: 44px;
+    /* background-color: blue; */
+    padding-left: 4px;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+}
+
+header .headername .header-name ion-icon {
+    font-size: 44px;
+    color: white;
+
+}
+
+header .headername .header-name h2 {
+    color: white;
+}
+
+header .headername .header-name h4 {
+    color: white;
+}
+
+header .headername .input1 {
+    width: 34%;
+    height: 41px;
+    /* background-color: blue; */
+    margin-left: 14px;
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+}
+
+header .headername .input1 input {
+    width: 21%;
+    height: 34px;
+    display: block;
+    border-radius: 11px;
+    outline: none;
+    margin-left: 14px;
+    padding-left: 4px;
+}
+
+
+
+@media only screen and (max-widh:650px) {
+    header {
+        align-items: center;
+    }
+
+    header .headername .header-name {
+        width: 65%;
+    }
+
+    header .headername .header-name ion-icon {
+        font-size: 24px;
+    }
+
+    header .headername .input1 {
+        width: 44%;
+    }
+
+    header .headername .input1 {
+        width: 34%;
+    }
+}
+
+@media only screen and (max-widh:495px) {
+    header {
+        align-items: center;
+    }
+
+    header .headername .header-name {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .headername {
+        width: 100%;
+    }
+
+    header .headername .input1 {
+        width: 54%;
+    }
+
+    header .headername .input1 {
+        width: 44%;
+    }
+}
+
+
+header nav {
+    width: 80%;
+    height: 40px;
+    margin: 62px 0 0 0;
+    background-color: rgb(2, 2, 32);
+    position: fixed;
+}
+
+header nav ul li:hover {
+    background-color: white;
+}
+
+header nav ul li:hover>a {
+    color: darkblue;
+}
+
+header nav ul {
+    width: 100%;
+    height: inherit;
+    background-color: rgb(2, 2, 32);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li:nth-child(1) {
+    width: 70px;
+    height: 35px;
+    /* background-color: aqua; */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+header a {
+    text-shadow: 0 0 10px gray;
+}
+
+header input,
+header label {
+    display: none;
+    position: fixed;
+}
+
+
+@media only screen and (max-width:600px) {
+    header {
+        align-items: center;
+    }
+
+    header nav {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        right: 100%;
+        z-index: 10;
+        bottom: 0;
+    }
+
+    header nav .navbar {
+        width: inherit;
+        height: inherit;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgb(2, 2, 54);
+        transition: 0.8s ease all;
+    }
+
+    header label {
+        display: block;
+        position: fixed;
+        z-index: 11;
+        right: 11px;
+        top: 14px;
+        font-size: 32px;
+        color: white;
+    }
+
+    header :checked~.nav {
+        right: 0;
+        background-color: rgb(22, 21, 21);
+    }
+
+}
+
+@media only screen and (max-width:400px) {
+
+    header label {
+        display: block;
+        position: fixed;
+        z-index: 11;
+        right: 4px;
+        top: 14px;
+        font-size: 32px;
+        color: white;
+    }
+}
+
+
+/* header and nav end */
+/* main started */
+
+main {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .section-1 {
+    width: 80%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .section-1 .sec-1-container {
+    width: 150px;
+    height: 120px;
+    background-color:rgb(2, 2, 32);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+main .section-1 .sec-1-container ion-icon {
+    font-size: 30px;
+    color: white;
+}
+
+/* main .section-1 .sec-1-container span {
+    font-size: 15px;
+    font-weight: 600;
+    color: darkblue;
+} */
+
+main .section-1 .sec-1-container h2 {
+    color: white;
+    /* font-size: 12px; */
+}
+
+main .section-1 .sec-1-container:hover>p::before {
+    content: "➤";
+    width: 60px;
+    height: 60px;
+    /* background-color: darkblue; */
+    color: rgb(2, 2, 32);
+    border-radius: 50%;
+}
+
+main .section-1 .sec-1-container:hover {
+    background-color:white;
+    transform: scale(1.2);
+}
+
+main .section-1 .sec-1-container:hover ion-icon {
+    color: rgb(2, 2, 32);
+}
+
+/* main .section-1 .sec-1-container:hover>span {
+    color: white;
+} */
+
+main .section-1 .sec-1-container:hover>h2 {
+    color:rgb(2, 2, 32);
+}
+
+@media only screen and (max-width:973px) {
+    header {
+        height: 320px;
+    }
+
+    main .section-1 {
+        flex-wrap: wrap;
+        gap: 20px;
+        position: static;
+    }
+}
+
+@media only screen and (max-width:615px) {
+    header {
+        height: 311px;
+    }
+
+    main .section-1 .sec-1-container {
+        width: 45%;
+    }
+
+}
+
+
+@media only screen and (max-width:450px) {
+    main .section-1 {
+        justify-content: center;
+    }
+
+    main .section-1 .sec-1-container {
+        width: 95%;
+    }
+}
+
+.section-2 {
+    width: 80%;
+    /* height: 400px; */
+    padding: 70px 0 10px 0;
+    /* background-color: darkolivegreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-2 h2 {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+    color: white;
+}
+
+.section-2 .section-2-container {
+    width: 100%;
+    /* height: 300px; */
+    /* background-color: firebrick; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3px;
+    padding: 5px 0 5px 0;
+}
+
+.section-2 .section-2-container img {
+    width: 500px;
+    height: 250px;
+
+}
+
+.section-2 .section-2-container .section-2-container-text-box {
+    width: 400px;
+    height: 230px;
+    /* background-color: fuchsia; */
+    color: white;
+    padding: 15px 5px 15px 5px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width:1170px) {
+    .section-2 {
+        padding: 50px 0 0 0;
+    }
+
+}
+
+@media only screen and (max-width:810px) {
+    .section-2 .section-2-container {
+        flex-wrap: wrap;
+    }
+
+    .section-2 .section-2-container img {
+        width: 90%;
+    }
+
+    .section-2 .section-2-container .section-2-container-text-box {
+        width: 90%;
+        height: 170px;
+        justify-content: space-around;
+        padding: 5px 5px 5px 5px;
+
+    }
+
+    .section-2 h2 {
+        font-size: 20px;
+        margin: 0 0 5px 0;
+
+    }
+}
+
+@media only screen and (max-width:460px) {
+    .section-2 .section-2-container .section-2-container-text-box {
+        height: 260px;
+    }
+
+}
+
+main #section-2 .section-2-container {
+    flex-direction: row-reverse;
+
+}
+
+main #section-2 {
+    padding: 20px 0 10px 0;
+}
+
+/* section-2 end section-3 started */
+
+main .section-3 {
+    background-image: url("../img/m3.jpg");
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+footer {
+    width: 100%;
+    /* height: 300px; */
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+
+}
+
+footer .footer-box {
+    width: 350px;
+    height: 250px;
+    background-color: rgb(2, 2, 32);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+footer .footer-box h2 {
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+footer .footer-box .footer-box-mini {
+    width: 60%;
+    height: 100px;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .footer-box .footer-box-mini i {
+    font-size: 30px;
+    color: white;
+
+}
+
+footer .footer-box .footer-box-mini i:hover {
+    color: skyblue;
+    cursor: pointer;
+}
